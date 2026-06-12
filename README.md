@@ -51,8 +51,8 @@ Result System
 - **CORS** for cross-origin requests
 
  Project Structure
-
-
+ 
+```
 secure-online-examination-system/
 ├── backend/
 │   ├── config/
