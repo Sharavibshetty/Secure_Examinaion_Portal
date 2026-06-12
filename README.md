@@ -1,14 +1,14 @@
-# 🔐 Secure Online Examination System
+Secure Online Examination System
 
 A complete MERN stack application for conducting secure online examinations with role-based access control, anti-cheating mechanisms, and comprehensive result management.
 
-## 🚀 Features
+ Features
 
-### 👥 User Roles
+ User Roles
 - **Admin**: Create exams, manage questions, view results
 - **Student**: Take exams, view results
 
-### 🔐 Security Features
+ Security Features
 - JWT-based authentication
 - Password hashing with bcrypt
 - Role-based access control
@@ -19,7 +19,7 @@ A complete MERN stack application for conducting secure online examinations with
   - Disabled page refresh during exam
   - Back button navigation blocked
 
-### 📝 Exam Management
+ Exam Management
 - Create and manage exams
 - Add multiple-choice questions
 - Set exam duration and marks
@@ -27,32 +27,32 @@ A complete MERN stack application for conducting secure online examinations with
 - Auto-submit on timeout
 - One attempt per student per exam
 
-### 📊 Result System
+Result System
 - Automatic scoring
 - Grade calculation
 - Performance analytics
 - Detailed result views
 - Export capabilities
 
-## 🛠️ Tech Stack
+ Tech Stack
 
-### Frontend
+ Frontend
 - **React 18** with Vite
 - **Tailwind CSS** for styling
 - **React Router** for navigation
 - **Axios** for API calls
 - **Context API** for state management
 
-### Backend
+ Backend
 - **Node.js** with Express.js
 - **MongoDB** with Mongoose
 - **JWT** for authentication
 - **bcrypt** for password hashing
 - **CORS** for cross-origin requests
 
-## 📁 Project Structure
+ Project Structure
 
-```
+
 secure-online-examination-system/
 ├── backend/
 │   ├── config/
@@ -104,14 +104,14 @@ secure-online-examination-system/
     └── vite.config.js
 ```
 
-## 🚀 Getting Started
+ Getting Started
 
-### Prerequisites
+ Prerequisites
 - Node.js (v14 or higher)
 - MongoDB (local or cloud)
 - npm or yarn
 
-### Installation
+ Installation
 
 1. **Clone the repository**
    ```bash
@@ -161,31 +161,31 @@ secure-online-examination-system/
    ```
    Application will run on http://localhost:3000
 
-## 📖 API Documentation
+ API Documentation
 
-### Authentication Routes
+ Authentication Routes
 - `POST /api/auth/register` - Register new user
 - `POST /api/auth/login` - Login user
 - `GET /api/auth/me` - Get current user
 
-### Exam Routes
+ Exam Routes
 - `POST /api/exams` - Create exam (Admin only)
 - `GET /api/exams` - Get all exams
 - `GET /api/exams/:id` - Get single exam
 - `DELETE /api/exams/:id` - Delete exam (Admin only)
 
-### Question Routes
+ Question Routes
 - `POST /api/questions/:examId` - Add question (Admin only)
 - `GET /api/questions/:examId` - Get exam questions
 
-### Result Routes
+ Result Routes
 - `POST /api/results/submit` - Submit exam (Student only)
 - `GET /api/results/student` - Get student results (Student only)
 - `GET /api/results/exam/:examId` - Get exam results (Admin only)
 
-## 🔒 Security Measures
+ Security Measures
 
-### Backend Security
+ Backend Security
 - JWT token validation
 - Password hashing with bcrypt
 - Role-based middleware
@@ -193,36 +193,36 @@ secure-online-examination-system/
 - Error handling middleware
 - CORS configuration
 
-### Frontend Security
+ Frontend Security
 - Protected routes
 - Token storage in localStorage
 - Auto logout on token expiry
 - Role-based component rendering
 
-### Anti-Cheating Features
+ Anti-Cheating Features
 - Tab switch detection with warnings
 - Auto-submit after multiple violations
 - Disabled browser back button
 - Page refresh prevention
 - Timer-based auto-submission
 
-## 👤 Default Users
+ Default Users
 
 You can create users through the registration page or use these test accounts:
 
-### Admin Account
+ Admin Account
 - Email: admin@example.com
 - Password: admin123
 - Role: admin
 
-### Student Account
+ Student Account
 - Email: student@example.com
 - Password: student123
 - Role: student
 
-## 🎯 Usage Guide
+ Usage Guide
 
-### For Admins
+ For Admins
 1. Login with admin credentials
 2. Navigate to "Manage Exams"
 3. Create a new exam with title, description, duration
@@ -230,7 +230,7 @@ You can create users through the registration page or use these test accounts:
 5. Mark correct answers and assign marks
 6. View student results and analytics
 
-### For Students
+ For Students
 1. Register or login with student credentials
 2. View available exams on dashboard
 3. Start an exam (timer begins automatically)
@@ -238,53 +238,20 @@ You can create users through the registration page or use these test accounts:
 5. Submit exam or wait for auto-submission
 6. View results and performance
 
-## 🚀 Deployment
+ Deployment
 
-### Backend Deployment
+Backend Deployment
 1. Set production environment variables
 2. Use PM2 or similar process manager
 3. Configure reverse proxy (nginx)
 4. Set up SSL certificate
 
-### Frontend Deployment
+ Frontend Deployment
 1. Build the application: `npm run build`
 2. Deploy to static hosting (Netlify, Vercel)
 3. Configure environment variables
 4. Set up custom domain
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
-## 📝 License
 
-This project is licensed under the MIT License.
-
-## 🐛 Known Issues
-
-- Timer may not sync perfectly across different browser tabs
-- Large file uploads not supported for questions
-- Real-time notifications not implemented
-
-## 🔮 Future Enhancements
-
-- [ ] Question bank management
-- [ ] Bulk question import/export
-- [ ] Advanced analytics dashboard
-- [ ] Email notifications
-- [ ] Mobile app support
-- [ ] Video proctoring
-- [ ] Plagiarism detection
-- [ ] Multi-language support
-
-## 📞 Support
-
-For support and questions, please open an issue in the repository or contact the development team.
-
----
-
-**Built with ❤️ using MERN Stack**
